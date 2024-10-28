@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tìm kiếm chuyến bay</title>
+   <style>
+      .search-bar {
+         display: flex;
+         flex-direction: column;
+         max-width: 600px;
+         margin: 0 auto;
+      }
+      .search-bar input, .search-bar select, .search-bar button {
+         margin: 5px 0;
+         padding: 10px;
+         font-size: 16px;
+      }
+      .search-bar button {
+         background-color: #007BFF;
+         color: white;
+         border: none;
+         cursor: pointer;
+      }
+      .search-bar button:hover {
+         background-color: #0056b3;
+      }
+   </style>
+</head>
+<body>
+   <div class="search-bar">
+      <label>Điểm khởi hành</label>
+      <input type="text" placeholder="Nhập điểm khởi hành">
+      
+      <label>Điểm đến</label>
+      <input type="text" placeholder="Nhập điểm đến">
+      
+      <label>Ngày khởi hành</label>
+      <input type="date">
+      
+      <label>Ngày trở về</label>
+      <input type="date">
+      
+      <label>Số lượng hành khách</label>
+      <input type="number" min="1" value="1">
+      
+      <label>Loại ghế</label>
+      <select>
+         <option>Phổ thông</option>
+         <option>Thương gia</option>
+         <option>Hạng nhất</option>
+      </select>
+      
+      <button type="submit">Tìm kiếm chuyến bay</button>
+   </div>
+</body>
+</html>
